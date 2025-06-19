@@ -38,18 +38,19 @@ export default function About() {
           </div>
         </div>
       </section>
+
       <section className="py-20">
         <div className="container mx-auto w-full ">
           <div className="mb-8 text-center">
             <div className="flex flex-col gap-20">
               <h2 className="max-w-xl mx-auto text-4xl text-center font-medium-sans">Meet Our Team: Compassionate Experts
                 Dedicated to Pets</h2>
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
                 <div className="relative flex flex-col justify-end p-4 overflow-hidden border border-black h-80 rounded-3xl">
                   <img className="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image1.png"
                     alt="Dr. Jenny Wilson" />
                   <div
-                    className="flex flex-row items-center justify-between gap-2 p-3 border-white shadow-2xl bg-opacity-80 rounded-2xl backdrop-blur-xl border-opacity-80 border-1 ">
+                    className="flex flex-row items-center justify-between gap-4 p-3 border-white shadow-2xl bg-opacity-80 rounded-2xl backdrop-blur-xl border-opacity-80 border-1 ">
                     <div>
                       <h4 className="text-base font-medium">Dr. Jenny Wilson</h4>
                       <p className="text-sm">veterinary</p>
@@ -66,7 +67,7 @@ export default function About() {
                     className="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 border-1 ">
                     <div>
                       <h4 className="text-base font-medium">Dr. Jane Cooper</h4>
-                      <p className="text-black-600">Veterinarian</p>
+                      <p className="text-sm">Veterinarian</p>
                     </div>
                     <a href="" title="Learn more about Dr. Jenny Wilson"><img className="w-8 h-8"
                       src="./assets/button-icon.svg" alt="" /></a>
@@ -80,21 +81,21 @@ export default function About() {
                     className="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 border-1 ">
                     <div>
                       <h4 className="text-base font-medium">Dr. Jacob Jones</h4>
-                      <p className="text-black-600">Veterinarian</p>
+                      <p className="text-sm">Veterinarian</p>
                     </div>
                     <a href="" title="Learn more about Dr. Jenny Wilson"><img className="w-8 h-8"
                       src="./assets/button-icon.svg" alt="" /></a>
                   </div>
                 </div>
 
-                <div className="relative flex flex-col justify-end p-3 overflow-hidden border border-black h-80 rounded-3xl">
+                <div className="relative flex flex-col justify-end p-3 overflow-hidden border border-black h-80 rounded-3xl" >
                   <img className="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image7.png"
                     alt="Dr. Guy Hawkins " />
                   <div
                     className="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 border-1 ">
                     <div>
                       <h4 className=" text-base font-medium">Dr. Guy Hawkins</h4>
-                      <p className="text-black-600">Veterinarian</p>
+                      <p className="text-sm">Veterinarian</p>
                     </div>
                     <a href="" title="Learn more about Dr. Jenny Wilson"><img className="w-8 h-8"
                       src="./assets/button-icon.svg" alt="" /></a>
@@ -105,10 +106,10 @@ export default function About() {
                   <img className="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image5.png"
                     alt="Dr. Kristin Watson" />
                   <div
-                    className="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 ">
+                    className="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border-1 border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 ">
                     <div>
-                      <h4 className="text-lg font-semibold">Dr. Kristin Watson</h4>
-                      <p className="text-black-600">Veterinarian</p>
+                      <h4 className="text-base font-medium">Dr. Kristin Watson</h4>
+                      <p className="text-sm">Veterinarian</p>
                     </div>
                     <a href="" title="Learn more about Dr. Jenny Wilson"><img className="w-8 h-8"
                       src="./assets/button-icon.svg" alt="" /></a>
@@ -119,10 +120,10 @@ export default function About() {
                   <img className="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image6.png"
                     alt="Dr. Theresa Webb" />
                   <div
-                    className="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 ">
+                    className="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border-1 border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 ">
                     <div>
-                      <h4 className="text-lg font-semibold">Dr. Theresa Webb</h4>
-                      <p className="text-black-600">Veterinarian</p>
+                      <h4 className="text-base font-medium">Dr. Theresa Webb</h4>
+                      <p className="text-sm">Veterinarian</p>
                     </div>
                     <a href="" title="Learn more about Dr. Jenny Wilson"><img className="w-8 h-8"
                       src="./assets/button-icon.svg" alt="" /></a>
@@ -135,8 +136,8 @@ export default function About() {
                   <div
                     className="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 border-1 ">
                     <div>
-                      <h4 className="text-lg font-medium ">Dr. Selena Grey</h4>
-                      <p className="text-black-600">Veterinarian</p>
+                      <h4 className="text-base font-medium ">Dr. Selena Grey</h4>
+                      <p className="text-sm">Veterinarian</p>
                     </div>
                     <a href="" title="Learn more about Dr. Jenny Wilson"><img className="w-8 h-8"
                       src="./assets/button-icon.svg" alt="" /></a>
@@ -147,20 +148,22 @@ export default function About() {
                   <img className="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image8.png"
                     alt="Dr. Kathryn Murpy" />
                   <div
-                    className="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 ">
+                    className="flex flex-row items-center justify-between gap-4 p-2 bg-opacity-75 border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 border-1 ">
                     <div>
-                      <h4 className="text-lg font-medium">Dr. Kathryn Murpy</h4>
-                      <p className="text-black-600">Veterinarian</p>
+                      <h4 className="text-base font-medium">Dr. Kathryn Murpy</h4>
+                      <p className="text-sm">Veterinarian</p>
                     </div>
                     <a href="" title="Learn more about Dr. Jenny Wilson"><img className="w-8 h-8"
                       src="./assets/button-icon.svg" alt="" /></a>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
         </div>
       </section >
+
       <div className="max-w-7xl mx-auto p-6 bg-gray-100">
         <h2 className="text-4xl  text-center mb-6">Compassionate Care
           for Every Paw, Every Day

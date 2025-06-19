@@ -24,6 +24,7 @@ export default function Home() {
           <div><img src="./assets/hero-image.png" alt="" /></div>
         </div>
       </div>
+      
       <div className="h-full max-w-screen-xl mx-auto">
         <div className="py-20 flex flex-col gap-15">
           <h2 className="text-5xl font-medium">The Best Facilities are Here</h2>
@@ -51,6 +52,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="h-full mx-auto  bg-[#f5f5f5]">
         <div className=" pt-12 flex flex-row justify-between max-w-screen-xl mx-auto">
           <img src="./assets/img1.png" alt="" className="max-w-[476px]" />
