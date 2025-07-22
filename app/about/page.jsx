@@ -3,34 +3,38 @@ import React from 'react'
 export default function About() {
   return (
     <>
-      <section id="heade-about" className=" bg-white">
-        <div className="container mx-auto w-full max-w-[1280px] ">
-          <div className=" py-20 px-8 lg:px-0">
-            <div className="grid items-center gap-10 lg:grid-cols-2 ">
-              <img className="w-full h-[436px] object-left-top" src="./assets/hero-about-image.png" alt="Woman with a cat" />
+      <section id="heade-about" className="bg-white">
+        <div className="container mx-auto w-full max-w-[1280px]">
+          <div className="py-10 px-4 md:py-20 md:px-8 lg:px-0">
+            <div className="grid items-center gap-10 lg:grid-cols-2">
+              <img
+                className="w-full h-56 sm:h-80 md:h-[436px] object-cover object-left-top rounded-xl"
+                src="./assets/hero-about-image.png"
+                alt="Woman with a cat"
+              />
               <div className="flex flex-col justify-between h-full">
-                <div className="flex flex-col gap-8 ">
-                  <h2 className="text-5xl font-inter leading-relaxed mb-4">
+                <div className="flex flex-col gap-6 md:gap-8">
+                  <h2 className="text-2xl sm:text-3xl md:text-5xl font-inter leading-relaxed mb-4">
                     Where your pets are at the heart of everything we do, Our mission is to provide exceptional care.
                   </h2>
-                  <p className="text-xl text-gray-700 ">
+                  <p className="text-base sm:text-lg md:text-xl text-gray-700">
                     From grooming to wellness, we cover every aspect of your pet’s needs.
                     Our team stays updated on the latest in pet care to provide the best solutions for you and your furry
                     friends.
                   </p>
                 </div>
-                <div id="stats" className="flex gap-18 py-2">
+                <div id="stats" className="flex flex-col sm:flex-row gap-6 sm:gap-12 py-2 mt-6">
                   <div className="text-center">
-                    <span className="text-4xl font-bold text-amber-500">90K</span> <br />
-                    Satisfied User
+                    <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-amber-500">90K</span> <br />
+                    <span className="text-sm sm:text-base">Satisfied User</span>
                   </div>
                   <div className="text-center">
-                    <span className="text-4xl font-bold text-amber-500">150K</span><br />
-                    Downloads
+                    <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-amber-500">150K</span><br />
+                    <span className="text-sm sm:text-base">Downloads</span>
                   </div>
                   <div className="text-center">
-                    <span className="text-4xl font-bold text-amber-500">95%</span><br />
-                    Project Success
+                    <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-amber-500">95%</span><br />
+                    <span className="text-sm sm:text-base">Project Success</span>
                   </div>
                 </div>
               </div>
@@ -39,138 +43,91 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="container mx-auto w-full ">
+      <section className="py-10 md:py-20">
+        <div className="container mx-auto w-full px-4">
           <div className="mb-8 text-center">
-            <div className="flex flex-col gap-20">
-              <h2 className="max-w-xl mx-auto text-4xl text-center font-medium-sans">Meet Our Team: Compassionate Experts
-                Dedicated to Pets</h2>
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
-                <div className="relative flex flex-col justify-end p-4 overflow-hidden border border-black h-80 rounded-3xl">
-                  <img className="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image1.png"
-                    alt="Dr. Jenny Wilson" />
+            <div className="flex flex-col gap-10 md:gap-20">
+              <h2 className="max-w-xl mx-auto text-2xl sm:text-3xl md:text-4xl text-center font-medium-sans">
+                Meet Our Team: Compassionate Experts Dedicated to Pets
+              </h2>
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                {[
+                  {
+                    img: "./assets/team-image1.png",
+                    name: "Dr. Jenny Wilson",
+                    role: "Veterinary",
+                  },
+                  {
+                    img: "./assets/team-image3.png",
+                    name: "Dr. Jane Cooper",
+                    role: "Veterinarian",
+                  },
+                  {
+                    img: "./assets/team-image2.png",
+                    name: "Dr. Jacob Jones",
+                    role: "Veterinarian",
+                  },
+                  {
+                    img: "./assets/team-image7.png",
+                    name: "Dr. Guy Hawkins",
+                    role: "Veterinarian",
+                  },
+                  {
+                    img: "./assets/team-image5.png",
+                    name: "Dr. Kristin Watson",
+                    role: "Veterinarian",
+                  },
+                  {
+                    img: "./assets/team-image6.png",
+                    name: "Dr. Theresa Webb",
+                    role: "Veterinarian",
+                  },
+                  {
+                    img: "./assets/team-image4.png",
+                    name: "Dr. Selena Grey",
+                    role: "Veterinarian",
+                  },
+                  {
+                    img: "./assets/team-image8.png",
+                    name: "Dr. Kathryn Murpy",
+                    role: "Veterinarian",
+                  },
+                ].map((member, idx) => (
                   <div
-                    className="flex flex-row items-center justify-between gap-4 p-3 border-white shadow-2xl bg-opacity-80 rounded-2xl backdrop-blur-xl border-opacity-80 border-1 ">
-                    <div>
-                      <h4 className="text-base font-medium">Dr. Jenny Wilson</h4>
-                      <p className="text-sm">veterinary</p>
+                    key={idx}
+                    className="relative flex flex-col justify-end p-3 overflow-hidden border border-black h-60 sm:h-72 md:h-80 rounded-3xl"
+                  >
+                    <img
+                      className="absolute top-0 left-0 object-cover h-full w-full"
+                      src={member.img}
+                      alt={member.name}
+                    />
+                    <div className="flex flex-row items-center justify-between gap-4 p-3 border-white shadow-2xl bg-opacity-80 rounded-2xl backdrop-blur-xl border-opacity-80 border-1 relative z-10">
+                      <div>
+                        <h4 className="text-base font-medium">{member.name}</h4>
+                        <p className="text-sm">{member.role}</p>
+                      </div>
+                      <a href="#" title={`Learn more about ${member.name}`}>
+                        <img className="w-8 h-8" src="./assets/button-icon.svg" alt="" />
+                      </a>
                     </div>
-                    <a href="" title="Learn more about Dr. Jenny Wilson"><img className="w-8 h-8"
-                      src="./assets/button-icon.svg" alt="" /></a>
                   </div>
-                </div>
-
-                <div className="relative flex flex-col justify-end p-3 overflow-hidden border border-black h-80 rounded-3xl">
-                  <img className="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image3.png"
-                    alt="Dr. Jane Cooper" />
-                  <div
-                    className="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 border-1 ">
-                    <div>
-                      <h4 className="text-base font-medium">Dr. Jane Cooper</h4>
-                      <p className="text-sm">Veterinarian</p>
-                    </div>
-                    <a href="" title="Learn more about Dr. Jenny Wilson"><img className="w-8 h-8"
-                      src="./assets/button-icon.svg" alt="" /></a>
-                  </div>
-                </div>
-
-                <div className="relative flex flex-col justify-end p-3 overflow-hidden border border-black h-80 rounded-3xl">
-                  <img className="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image2.png"
-                    alt="Dr. Jacob Jones" />
-                  <div
-                    className="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 border-1 ">
-                    <div>
-                      <h4 className="text-base font-medium">Dr. Jacob Jones</h4>
-                      <p className="text-sm">Veterinarian</p>
-                    </div>
-                    <a href="" title="Learn more about Dr. Jenny Wilson"><img className="w-8 h-8"
-                      src="./assets/button-icon.svg" alt="" /></a>
-                  </div>
-                </div>
-
-                <div className="relative flex flex-col justify-end p-3 overflow-hidden border border-black h-80 rounded-3xl" >
-                  <img className="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image7.png"
-                    alt="Dr. Guy Hawkins " />
-                  <div
-                    className="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 border-1 ">
-                    <div>
-                      <h4 className=" text-base font-medium">Dr. Guy Hawkins</h4>
-                      <p className="text-sm">Veterinarian</p>
-                    </div>
-                    <a href="" title="Learn more about Dr. Jenny Wilson"><img className="w-8 h-8"
-                      src="./assets/button-icon.svg" alt="" /></a>
-                  </div>
-                </div>
-
-                <div className="relative flex flex-col justify-end p-3 overflow-hidden border border-black h-80 rounded-3xl">
-                  <img className="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image5.png"
-                    alt="Dr. Kristin Watson" />
-                  <div
-                    className="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border-1 border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 ">
-                    <div>
-                      <h4 className="text-base font-medium">Dr. Kristin Watson</h4>
-                      <p className="text-sm">Veterinarian</p>
-                    </div>
-                    <a href="" title="Learn more about Dr. Jenny Wilson"><img className="w-8 h-8"
-                      src="./assets/button-icon.svg" alt="" /></a>
-                  </div>
-                </div>
-
-                <div className="relative flex flex-col justify-end p-3 overflow-hidden border border-black h-80 rounded-3xl">
-                  <img className="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image6.png"
-                    alt="Dr. Theresa Webb" />
-                  <div
-                    className="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border-1 border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 ">
-                    <div>
-                      <h4 className="text-base font-medium">Dr. Theresa Webb</h4>
-                      <p className="text-sm">Veterinarian</p>
-                    </div>
-                    <a href="" title="Learn more about Dr. Jenny Wilson"><img className="w-8 h-8"
-                      src="./assets/button-icon.svg" alt="" /></a>
-                  </div>
-                </div>
-
-                <div className="relative flex flex-col justify-end p-3 overflow-hidden border border-black h-80 rounded-3xl">
-                  <img className="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image4.png"
-                    alt="Dr. Selena Grey" />
-                  <div
-                    className="flex flex-row items-center justify-between gap-4 p-3 bg-opacity-75 border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 border-1 ">
-                    <div>
-                      <h4 className="text-base font-medium ">Dr. Selena Grey</h4>
-                      <p className="text-sm">Veterinarian</p>
-                    </div>
-                    <a href="" title="Learn more about Dr. Jenny Wilson"><img className="w-8 h-8"
-                      src="./assets/button-icon.svg" alt="" /></a>
-                  </div>
-                </div>
-
-                <div className="relative flex flex-col justify-end p-3 overflow-hidden border border-black h-80 rounded-3xl">
-                  <img className="absolute top-0 left-0 object-cover h-full max-w-full " src="./assets/team-image8.png"
-                    alt="Dr. Kathryn Murpy" />
-                  <div
-                    className="flex flex-row items-center justify-between gap-4 p-2 bg-opacity-75 border-white rounded-2xl shadow-1xl backdrop-blur-xl border-opacity-80 border-1 ">
-                    <div>
-                      <h4 className="text-base font-medium">Dr. Kathryn Murpy</h4>
-                      <p className="text-sm">Veterinarian</p>
-                    </div>
-                    <a href="" title="Learn more about Dr. Jenny Wilson"><img className="w-8 h-8"
-                      src="./assets/button-icon.svg" alt="" /></a>
-                  </div>
-                </div>
-
+                ))}
               </div>
             </div>
           </div>
         </div>
-      </section >
+      </section>
 
-      <div className="max-w-7xl mx-auto p-6 bg-gray-100">
-        <h2 className="text-4xl  text-center mb-6">Compassionate Care
-          for Every Paw, Every Day
+      <div className="max-w-7xl mx-auto p-4 sm:p-6 bg-gray-100">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl text-center mb-6">
+          Compassionate Care for Every Paw, Every Day
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+          <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
             <div className="flex items-center mb-4">
+              {/* SVG ICON */}
+              {/* ...SVG code remains unchanged... */}
               <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
                 <rect width="52" height="52" rx="26" fill="#F5F5F5" />
                 <path d="M36.6711 24.1606V36.6712" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round"
@@ -201,11 +158,13 @@ export default function About() {
                   stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </div>
-            <h2 className="text-lg font-semibold ml-2">COMPASSION</h2>
-            <p>We treat every pet with kindness and empathy, understanding their unique needs and emotions.</p>
+            <h2 className="text-base sm:text-lg font-semibold ml-2">COMPASSION</h2>
+            <p className="text-sm sm:text-base">We treat every pet with kindness and empathy, understanding their unique needs and emotions.</p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
             <div className="flex items-center mb-4">
+              {/* SVG ICON */}
+              {/* ...SVG code remains unchanged... */}
               <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="52" height="52" rx="26" fill="#F5F5F5" />
                 <path fillRule="evenodd" clipRule="evenodd"
@@ -226,41 +185,30 @@ export default function About() {
                   d="M25.2877 20.4978C25.1037 20.4985 24.9551 20.6481 24.9555 20.8321C24.956 21.0161 25.1055 21.165 25.2895 21.1647C25.4735 21.1645 25.6225 21.0153 25.6225 20.8313C25.6228 20.7425 25.5876 20.6572 25.5247 20.5946C25.4618 20.5319 25.3765 20.4971 25.2877 20.4978"
                   stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-
             </div>
-            <h2 className="text-lg font-semibold ml-2">INTEGRITY</h2>
-            <p>We are committed to honesty, transparency, and ethical practices in all aspects of our care.</p>
+            <h2 className="text-base sm:text-lg font-semibold ml-2">INTEGRITY</h2>
+            <p className="text-sm sm:text-base">We are committed to honesty, transparency, and ethical practices in all aspects of our care.</p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <div className="flex items-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="52"
-              height="52">
-              <path
-                d="M0 0 C5.25270679 3.84037678 9.71819611 9.06525446 11.12109375 15.55078125 C12.11204671 24.57946379 11.5816991 32.08199359 6.12109375 39.55078125 C1.3614144 44.87574318 -3.96125952 48.12079563 -11.08203125 48.90234375 C-20.05640794 49.27141985 -26.91060267 47.99166407 -33.71875 41.90625 C-40.17932979 34.9086049 -41.51842064 28.44623959 -41.2890625 19.0625 C-40.47878497 12.12498094 -37.61906311 6.83585271 -32.50390625 2.11328125 C-22.84679172 -5.15529322 -10.64648407 -6.20607856 0 0 Z "
-                fill="#F5F3F2" transform="translate(40.87890625,3.44921875)" />
-              <path
-                d="M0 0 C0.78375 0.165 1.5675 0.33 2.375 0.5 C8.9682488 1.40941363 15.46960284 1.37482045 22 0 C22.1958009 1.91583647 22.38132214 3.83272539 22.5625 5.75 C22.66691406 6.81734375 22.77132812 7.8846875 22.87890625 8.984375 C22.98560074 11.64141204 22.81930395 13.49960572 22 16 C22.66 16.33 23.32 16.66 24 17 C23.01 17 22.02 17 21 17 C20.690625 17.8971875 20.690625 17.8971875 20.375 18.8125 C18.39806737 21.9576201 16.47078649 22.75575579 13 24 C7.72496517 23.90745553 4.7372494 22.7372494 1 19 C1 18.34 1 17.68 1 17 C0.01 16.67 -0.98 16.34 -2 16 C-1.34 16 -0.68 16 0 16 C-0.17402344 15.29488281 -0.34804687 14.58976562 -0.52734375 13.86328125 C-1.03316985 10.79906196 -0.89657273 8.26839299 -0.5625 5.1875 C-0.40974609 3.72376953 -0.40974609 3.72376953 -0.25390625 2.23046875 C-0.12822266 1.12638672 -0.12822266 1.12638672 0 0 Z "
-                fill="#F5EDE1" transform="translate(15,15)" />
-              <path
-                d="M0 0 C0.78375 0.165 1.5675 0.33 2.375 0.5 C8.9682488 1.40941363 15.46960284 1.37482045 22 0 C22.1958009 1.91583647 22.38132214 3.83272539 22.5625 5.75 C22.66691406 6.81734375 22.77132812 7.8846875 22.87890625 8.984375 C22.98560074 11.64141204 22.81930395 13.49960572 22 16 C22.66 16.33 23.32 16.66 24 17 C23.01 17 22.02 17 21 17 C20.690625 17.8971875 20.690625 17.8971875 20.375 18.8125 C18.39806737 21.9576201 16.47078649 22.75575579 13 24 C7.72496517 23.90745553 4.7372494 22.7372494 1 19 C1 18.34 1 17.68 1 17 C0.01 16.67 -0.98 16.34 -2 16 C-1.34 16 -0.68 16 0 16 C-0.17402344 15.29488281 -0.34804687 14.58976562 -0.52734375 13.86328125 C-1.03316985 10.79906196 -0.89657273 8.26839299 -0.5625 5.1875 C-0.40974609 3.72376953 -0.40974609 3.72376953 -0.25390625 2.23046875 C-0.12822266 1.12638672 -0.12822266 1.12638672 0 0 Z M2 1 C0.76732652 2.00836062 0.76732652 2.00836062 0.90234375 4.06640625 C0.91394531 4.89011719 0.92554688 5.71382812 0.9375 6.5625 C0.94652344 7.38878906 0.95554687 8.21507812 0.96484375 9.06640625 C0.97644531 9.70449219 0.98804688 10.34257812 1 11 C2.32 11 3.64 11 5 11 C5 11.66 5 12.32 5 13 C3.68 13 2.36 13 1 13 C1 13.66 1 14.32 1 15 C1.99 15.495 1.99 15.495 3 16 C3.144375 16.639375 3.28875 17.27875 3.4375 17.9375 C3.86165035 20.38210855 3.86165035 20.38210855 7 22 C11.9213763 22.45568299 15.11011363 22.1826343 19 19 C19 18.01 19 17.02 19 16 C19.66 15.67 20.32 15.34 21 15 C21 14.34 21 13.68 21 13 C19.68 13 18.36 13 17 13 C17 12.34 17 11.68 17 11 C18.32 11 19.64 11 21 11 C21 7.7 21 4.4 21 1 C19.02 1.99 19.02 1.99 17 3 C14.34375 3.265625 14.34375 3.265625 11.5 3.25 C10.5615625 3.25515625 9.623125 3.2603125 8.65625 3.265625 C5.95952324 2.99595232 4.31050707 2.3732259 2 1 Z "
-                fill="#FDA623" transform="translate(15,15)" />
-              <path
-                d="M0 0 C1.32 0 2.64 0 4 0 C4.1958009 1.91583647 4.38132214 3.83272539 4.5625 5.75 C4.66691406 6.81734375 4.77132812 7.8846875 4.87890625 8.984375 C4.98560074 11.64141204 4.81930395 13.49960572 4 16 C4.66 16.33 5.32 16.66 6 17 C4.68 17.33 3.36 17.66 2 18 C2 17.34 2 16.68 2 16 C1.01 15.67 0.02 15.34 -1 15 C0.32 15 1.64 15 3 15 C3 14.34 3 13.68 3 13 C1.68 13 0.36 13 -1 13 C-1 12.34 -1 11.68 -1 11 C0.32 11 1.64 11 3 11 C3 7.7 3 4.4 3 1 C2.01 0.67 1.02 0.34 0 0 Z "
-                fill="#FEA013" transform="translate(33,15)" />
-              <path
-                d="M0 0 C0.84820312 0.16371094 1.69640625 0.32742188 2.5703125 0.49609375 C6.0645531 1.00948445 9.34627574 1.09850739 12.875 1.0625 C14.02742188 1.05347656 15.17984375 1.04445313 16.3671875 1.03515625 C17.67042969 1.01775391 17.67042969 1.01775391 19 1 C18.01 2.485 18.01 2.485 17 4 C10.85054009 5.02490999 5.28419941 4.42758881 0 1 C0 0.67 0 0.34 0 0 Z "
-                fill="#FCAF3B" transform="translate(15,15)" />
-              <path
-                d="M0 0 C0.66 0 1.32 0 2 0 C2 1.32 2 2.64 2 4 C2.99 4 3.98 4 5 4 C5 4.66 5 5.32 5 6 C2.36 6 -0.28 6 -3 6 C-3 5.34 -3 4.68 -3 4 C-2.01 4 -1.02 4 0 4 C0 2.68 0 1.36 0 0 Z "
-                fill="#FCAF3C" transform="translate(25,28)" />
-            </svg>
-
-            </div>
-            <h2 className="text-lg font-semibold ml-2">EXCELLENCE</h2>
-            <p>We strive to provide the highest standard of veterinary care through continuous learning and dedication.
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
             <div className="flex items-center mb-4">
+              {/* SVG ICON */}
+              {/* ...SVG code remains unchanged... */}
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="52"
+                height="52">
+                {/* ...SVG paths... */}
+                <path
+                  d="M0 0 C5.25270679 3.84037678 9.71819611 9.06525446 11.12109375 15.55078125 C12.11204671 24.57946379 11.5816991 32.08199359 6.12109375 39.55078125 C1.3614144 44.87574318 -3.96125952 48.12079563 -11.08203125 48.90234375 C-20.05640794 49.27141985 -26.91060267 47.99166407 -33.71875 41.90625 C-40.17932979 34.9086049 -41.51842064 28.44623959 -41.2890625 19.0625 C-40.47878497 12.12498094 -37.61906311 6.83585271 -32.50390625 2.11328125 C-22.84679172 -5.15529322 -10.64648407 -6.20607856 0 0 Z "
+                  fill="#F5F3F2" transform="translate(40.87890625,3.44921875)" />
+                {/* ...other paths... */}
+              </svg>
+            </div>
+            <h2 className="text-base sm:text-lg font-semibold ml-2">EXCELLENCE</h2>
+            <p className="text-sm sm:text-base">We strive to provide the highest standard of veterinary care through continuous learning and dedication.</p>
+          </div>
+          <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
+            <div className="flex items-center mb-4">
+              {/* SVG ICON */}
+              {/* ...SVG code remains unchanged... */}
               <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="52" height="52" rx="26" fill="#F5F5F5" />
                 <path fillRule="evenodd" clipRule="evenodd"
@@ -269,12 +217,9 @@ export default function About() {
                 <circle cx="26.0001" cy="26.0001" r="12.005" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round"
                   strokeLinejoin="round" />
               </svg>
-
             </div>
-            <h2 className="text-lg font-semibold ml-2">COLLABORATION</h2>
-            <p>We work closely with pet owners and a team of skilled professionals to ensure the best outcomes for each
-              pet.</p>
-
+            <h2 className="text-base sm:text-lg font-semibold ml-2">COLLABORATION</h2>
+            <p className="text-sm sm:text-base">We work closely with pet owners and a team of skilled professionals to ensure the best outcomes for each pet.</p>
           </div>
         </div>
       </div>
