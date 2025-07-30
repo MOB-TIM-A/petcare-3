@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 export default function Home() {
+
   return (
     <>
       <div className="h-full max-w-screen-xl mx-auto px-4">
@@ -15,12 +16,18 @@ export default function Home() {
               adopting and caring for your new pet
             </p>
             <div className="flex flex-col sm:flex-row gap-2 mt-6">
-              <div className="px-6 py-3 bg-[#FF9900] text-white rounded-full text-center cursor-pointer">
+              <button
+                className="px-6 py-3 bg-[#FF9900] text-white rounded-full text-center cursor-pointer"
+               
+              >
                 Book Appointment
-              </div>
-              <div className="px-6 py-3 border border-[#1B1B1B] text-[#1B1B1B] rounded-full text-center cursor-pointer">
+              </button>
+              <button
+                className="px-6 py-3 border border-[#1B1B1B] text-[#1B1B1B] rounded-full text-center cursor-pointer"
+               
+              >
                 Get Started
-              </div>
+              </button>
             </div>
             <img src="./assets/line2.svg" alt="" className="max-w-[180px] md:max-w-[239px] mt-10 md:mt-20 ml-[15%] md:ml-[25%]" />
           </div>
