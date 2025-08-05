@@ -8,7 +8,7 @@ export default function About() {
           <div className="py-10 px-4 md:py-20 md:px-8 lg:px-0">
             <div className="grid items-center gap-10 lg:grid-cols-2">
               <img
-                className="w-full h-56 sm:h-80 md:h-[436px] object-cover object-left-top rounded-xl"
+                className="w-full h-56 sm:h-80 md:h-[436px] object-cover object-left-top rounded-l"
                 src="./assets/hero-about-image.png"
                 alt="Woman with a cat"
               />

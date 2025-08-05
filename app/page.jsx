@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -16,18 +17,18 @@ export default function Home() {
               adopting and caring for your new pet
             </p>
             <div className="flex flex-col sm:flex-row gap-2 mt-6">
-              <button
+              <Link
+                href="/contact"
                 className="px-6 py-3 bg-[#FF9900] text-white rounded-full text-center cursor-pointer"
-               
-              >
+               >
                 Book Appointment
-              </button>
-              <button
-                className="px-6 py-3 border border-[#1B1B1B] text-[#1B1B1B] rounded-full text-center cursor-pointer"
-               
-              >
-                Get Started
-              </button>
+              </Link>
+             <Link
+               href="/contact"
+               className="px-6 py-3 border border-[#1B1B1B] text-[#1B1B1B] rounded-full text-center cursor-pointer"
+             >
+               Get Started
+             </Link>
             </div>
             <img src="./assets/line2.svg" alt="" className="max-w-[180px] md:max-w-[239px] mt-10 md:mt-20 ml-[15%] md:ml-[25%]" />
           </div>
