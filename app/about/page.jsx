@@ -194,20 +194,18 @@ export default function About() {
               {/* SVG ICON */}
               {/* ...SVG code remains unchanged... */}
              <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="52" height="52" rx="26" fill="#F5F5F5"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M30.101 18.5562L33.2868 15.8264C33.8948 15.3055 34.7505 15.1861 35.4779 15.5207C36.2053 15.8553 36.6713 16.5828 36.6713 17.3834V27.3341C36.6713 33.2276 31.8937 38.0052 26.0002 38.0052V38.0052C20.1067 38.0052 15.3291 33.2276 15.3291 27.3341V17.3834C15.3291 16.5828 15.7952 15.8553 16.5226 15.5207C17.25 15.1861 18.1056 15.3055 18.7136 15.8264L21.8994 18.5562C24.5528 17.6181 27.4476 17.6181 30.101 18.5562Z" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M26 29.3348V29.3348C25.6317 29.3348 25.3331 29.0362 25.3331 28.6679V28.6679C25.3331 28.5451 25.4326 28.4456 25.5554 28.4456H26.4447C26.5675 28.4456 26.667 28.5451 26.667 28.6679V28.6679C26.667 29.0362 26.3684 29.3348 26 29.3348Z" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M23.0833 32.8359C23.4034 33.1569 23.8382 33.337 24.2915 33.3364V33.3364C25.2352 33.3364 26.0002 32.5714 26.0002 31.6277C26.0002 32.3188 26.4166 32.9418 27.0551 33.2063C27.6936 33.4708 28.4285 33.3246 28.9172 32.8359" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M26.0002 29.335V31.6279" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M32.6697 27.0762L38.0052 26.1869" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M38.0052 31.3357L32.6697 30.4464" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M19.3307 27.0762L13.9951 26.1869" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M13.9951 31.3357L19.3307 30.4464" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M21.0811 23.8849C21.8177 23.1482 23.0121 23.1482 23.7488 23.8849" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M28.2515 23.8849C28.9882 23.1482 30.1826 23.1482 30.9192 23.8849" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-
+                <rect width="52" height="52" rx="26" fill="#F5F5F5"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M30.101 18.5562L33.2868 15.8264C33.8948 15.3055 34.7505 15.1861 35.4779 15.5207C36.2053 15.8553 36.6713 16.5828 36.6713 17.3834V27.3341C36.6713 33.2276 31.8937 38.0052 26.0002 38.0052V38.0052C20.1067 38.0052 15.3291 33.2276 15.3291 27.3341V17.3834C15.3291 16.5828 15.7952 15.8553 16.5226 15.5207C17.25 15.1861 18.1056 15.3055 18.7136 15.8264L21.8994 18.5562C24.5528 17.6181 27.4476 17.6181 30.101 18.5562Z" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M26 29.3348V29.3348C25.6317 29.3348 25.3331 29.0362 25.3331 28.6679V28.6679C25.3331 28.5451 25.4326 28.4456 25.5554 28.4456H26.4447C26.5675 28.4456 26.667 28.5451 26.667 28.6679V28.6679C26.667 29.0362 26.3684 29.3348 26 29.3348Z" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M23.0833 32.8359C23.4034 33.1569 23.8382 33.337 24.2915 33.3364V33.3364C25.2352 33.3364 26.0002 32.5714 26.0002 31.6277C26.0002 32.3188 26.4166 32.9418 27.0551 33.2063C27.6936 33.4708 28.4285 33.3246 28.9172 32.8359" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M26.0002 29.335V31.6279" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M32.6697 27.0762L38.0052 26.1869" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M38.0052 31.3357L32.6697 30.4464" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19.3307 27.0762L13.9951 26.1869" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.9951 31.3357L19.3307 30.4464" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21.0811 23.8849C21.8177 23.1482 23.0121 23.1482 23.7488 23.8849" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M28.2515 23.8849C28.9882 23.1482 30.1826 23.1482 30.9192 23.8849" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+             </svg>
             </div>
             <h2 className="text-base sm:text-lg font-semibold ml-2">EXCELLENCE</h2>
             <p className="text-sm sm:text-base">We strive to provide the highest standard of veterinary care through continuous learning and dedication.</p>
