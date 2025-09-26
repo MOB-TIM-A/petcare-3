@@ -5,9 +5,9 @@ export default function Service() {
     <>
       <section id="first-section" className="pt-10 pb-20">
         <div className="max-w-[1280px] mx-auto px-6">
-          <div className="mb-10">
-            <h1 className="mb-5 text-4xl font-semibold text-center md:text-left">Your Pet's Happiness, Our Top Priority Always!</h1>
-            <p className="text-center md:text-left">Discover personalized care and expert services designed to keep your furry friends healthy, happy, and full of joy.</p>
+          <div className="mb-10 justify-between">
+            <h1 className="mb-5 text-4xl font-semibold  text-center md:text-left">Your Pet's Happiness, Our Top Priority Always!</h1>
+            <p className="text-center  md:text-left">Discover personalized care and expert services designed to keep your furry friends healthy, happy, and full of joy.</p>
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="flex flex-col order-2 gap-5 md:order-1">

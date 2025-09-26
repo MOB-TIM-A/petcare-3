@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
 
-  return (
+return (
     <>
       <div className="h-full max-w-screen-xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
@@ -37,12 +37,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
+
       <section className="py-4 bg-[#FF9900] text-white">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="flex flex-wrap justify-center gap-8 aniamate-slide-right">
             <div className="flex items-center">
-              <img className="w-8 h-8 mr-2 animate-spin" src="./assets/label-icon.svg" alt="Grooming Service" />
+              <img className="w-8 h-8 mr-2 animate-spin " src="./assets/label-icon.svg" alt="Grooming Service" />
               <p className="text-lg font-semibold">Grooming Service</p>
             </div>
             <div className="flex items-center">
@@ -106,6 +106,14 @@ export default function Home() {
       {/* Schedule Time Section */}
       <div className="h-full mx-auto bg-[#f5f5f5] py-20">
         <div className="pt-12 flex flex-col lg:flex-row justify-center items-center max-w-screen-xl mx-auto px-4">
+          <svg width="277" height="274" viewBox="0 0 277 274" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fillRule="evenodd" clipRule="evenodd" d="M99.4641 196.762L103.361 195.261C108.565 193.256 114.388 193.314 119.548 195.422C124.707 197.53 128.782 201.516 130.875 206.502L132.442 210.235C135.265 216.962 140.762 222.339 147.723 225.182L150.898 226.48C165.394 232.402 182.155 225.944 188.337 212.056C192.079 203.648 191.187 194.005 185.961 186.358C180.081 177.754 176.349 167.969 175.053 157.761L173.108 142.444C171.75 131.747 164.542 122.556 154.197 118.33C144.02 114.172 132.313 115.435 123.356 121.656L109.16 131.517C100.782 137.337 91.1592 141.302 80.987 143.125L80.3971 143.23C71.0196 144.911 63.1391 150.971 59.397 159.379C53.2159 173.267 59.9561 189.326 74.4518 195.248L77.6269 196.545C84.588 199.389 92.4431 199.467 99.4641 196.762Z" fill="#FF9900" fillOpacity="0.2"/>
+            <ellipse cx="20.884" cy="20.2742" rx="20.884" ry="20.2742" transform="matrix(0.925725 0.378197 -0.406616 0.913599 80.0798 76.6406)" fill="#FF9900" fillOpacity="0.2"/>
+            <ellipse cx="20.884" cy="20.2742" rx="20.884" ry="20.2742" transform="matrix(0.925725 0.378197 -0.406616 0.913599 200.958 126.024)" fill="#FF9900" fillOpacity="0.2"/>
+            <ellipse cx="20.884" cy="20.2742" rx="20.884" ry="20.2742" transform="matrix(0.925725 0.378197 -0.406616 0.913599 131.798 52.1497)" fill="#FF9900" fillOpacity="0.2"/>
+            <ellipse cx="20.884" cy="20.2742" rx="20.884" ry="20.2742" transform="matrix(0.925725 0.378197 -0.406616 0.913599 183.611 73.3167)" fill="#FF9900" fillOpacity="0.2"/>
+          </svg>
+
           <img
             src="./assets/img1.png"
             alt=""
@@ -148,6 +156,31 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Section Testimonial Baru */}
+    <div className="max-w-screen-xl mx-auto px-4 mt-20">
+      <h3 className="text-3xl font-semibold mb-8">What Our Client Say</h3>
+      <div className="bg-[#f0f0f0] rounded-xl p-8 max-w-3xl mx-auto">
+        <span className="inline-block bg-orange-200 text-orange-600 text-sm px-4 py-1 justify-center item-center rounded-full mb-4">
+          John Corner, Melbourne
+        </span>
+          <p className="text-center text-lg leading-relaxed">
+          So far, this pet shop has proven to be the best in the area when it comes to
+          providing expert and reliable services for pet owners. Their team operates
+          with genuine care and passion.
+          </p>
+        <div className="flex justify-center gap-4 mt-6 text-xl text-gray-700">
+            <button aria-label="Previous testimonial" className="hover:text-orange-500">
+            &larr;
+          </button>
+          <button aria-label="Next testimonial" className="hover:text-orange-500">
+          &rarr;
+        </button>
+      </div>
+    </div>
+  </div>
+      
+
     </>
   );
 }

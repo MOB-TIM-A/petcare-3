@@ -103,9 +103,17 @@ export default function About() {
                       alt={member.name}
                     />
                     <div className="flex flex-row items-center justify-between gap-4 p-3 border-white shadow-2xl bg-opacity-80 rounded-2xl backdrop-blur-xl border-opacity-80 border-1 relative z-10">
-                      <div>
-                        <h4 className="text-base font-medium">{member.name}</h4>
-                        <p className="text-sm">{member.role}</p>
+                      <div className="flex flex-col justify-center">
+                        <h4 className="text-base text-amber-500 font-medium">{member.name}</h4>
+                        <div className="flex items-center gap-2">
+                          {/* Briefcase Icon */}
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24">
+                            <path stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="M7 7V6a5 5 0 0 1 10 0v1"/>
+                            <rect x="3" y="7" width="18" height="14" rx="2" stroke="#FF9900" strokeWidth="1.5"/>
+                            <path stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="M3 11h18"/>
+                          </svg>
+                          <p className="text-base text-amber-500">{member.role}</p>
+                        </div>
                       </div>
                       <a href="#" title={`Learn more about ${member.name}`}>
                         <img className="w-8 h-8" src="./assets/button-icon.svg" alt="" />
@@ -159,7 +167,9 @@ export default function About() {
               </svg>
             </div>
             <h2 className="text-base sm:text-lg font-semibold ml-2">COMPASSION</h2>
-            <p className="text-sm sm:text-base">We treat every pet with kindness and empathy, understanding their unique needs and emotions.</p>
+            <p className="text-sm sm:text-base mt-1">{/* Tambahkan mt-1 agar ada jarak dan sejajar */}
+              We treat every pet with kindness and empathy, understanding their unique needs and emotions.
+            </p>
           </div>
           <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
             <div className="flex items-center mb-4">
@@ -187,7 +197,9 @@ export default function About() {
               </svg>
             </div>
             <h2 className="text-base sm:text-lg font-semibold ml-2">INTEGRITY</h2>
-            <p className="text-sm sm:text-base">We are committed to honesty, transparency, and ethical practices in all aspects of our care.</p>
+            <p className="text-sm sm:text-base mt-1">
+              We are committed to honesty, transparency, and ethical practices in all aspects of our care.
+            </p>
           </div>
           <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
             <div className="flex items-center mb-4">
@@ -195,22 +207,22 @@ export default function About() {
               {/* ...SVG code remains unchanged... */}
              <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="52" height="52" rx="26" fill="#F5F5F5"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M30.1008 18.5562L33.2866 15.8264C33.8946 15.3055 34.7502 15.1861 35.4776 15.5207C36.205 15.8553 36.6711 16.5828 36.6711 17.3834V27.3341C36.6711 33.2276 31.8935 38.0052 26 38.0052V38.0052C20.1065 38.0052 15.3289 33.2276 15.3289 27.3341V17.3834C15.3289 16.5828 15.7949 15.8553 16.5223 15.5207C17.2497 15.1861 18.1054 15.3055 18.7134 15.8264L21.8992 18.5562C24.5526 17.6181 27.4474 17.6181 30.1008 18.5562Z" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M26 29.3348V29.3348C25.6317 29.3348 25.3331 29.0362 25.3331 28.6679V28.6679C25.3331 28.5451 25.4326 28.4456 25.5554 28.4456H26.4447C26.5675 28.4456 26.667 28.5451 26.667 28.6679V28.6679C26.667 29.0362 26.3684 29.3348 26 29.3348Z" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M23.083 32.8359C23.4031 33.1569 23.838 33.337 24.2913 33.3364V33.3364C25.235 33.3364 26 32.5714 26 31.6277C26 32.3188 26.4163 32.9418 27.0548 33.2063C27.6933 33.4708 28.4283 33.3246 28.9169 32.8359" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M26 29.3347V31.6277" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M32.6694 27.0762L38.005 26.1869" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M38.005 31.3357L32.6694 30.4464" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M19.3307 27.0762L13.9951 26.1869" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M13.9951 31.3357L19.3307 30.4464" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M21.0811 23.8849C21.8177 23.1482 23.0121 23.1482 23.7488 23.8849" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M28.2515 23.8849C28.9882 23.1482 30.1826 23.1482 30.9192 23.8849" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path fillRule="evenodd" clipRule="evenodd" d="M30.1008 18.5562L33.2866 15.8264C33.8946 15.3055 34.7502 15.1861 35.4776 15.5207C36.205 15.8553 36.6711 16.5828 36.6711 17.3834V27.3341C36.6711 33.2276 31.8935 38.0052 26 38.0052V38.0052C20.1065 38.0052 15.3289 33.2276 15.3289 27.3341V17.3834C15.3289 16.5828 15.7949 15.8553 16.5223 15.5207C17.2497 15.1861 18.1054 15.3055 18.7134 15.8264L21.8992 18.5562C24.5526 17.6181 27.4474 17.6181 30.1008 18.5562Z" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path fillRule="evenodd" clipRule="evenodd" d="M26 29.3348V29.3348C25.6317 29.3348 25.3331 29.0362 25.3331 28.6679V28.6679C25.3331 28.5451 25.4326 28.4456 25.5554 28.4456H26.4447C26.5675 28.4456 26.667 28.5451 26.667 28.6679V28.6679C26.667 29.0362 26.3684 29.3348 26 29.3348Z" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M23.083 32.8359C23.4031 33.1569 23.838 33.337 24.2913 33.3364V33.3364C25.235 33.3364 26 32.5714 26 31.6277C26 32.3188 26.4163 32.9418 27.0548 33.2063C27.6933 33.4708 28.4283 33.3246 28.9169 32.8359" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M26 29.3347V31.6277" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M32.6694 27.0762L38.005 26.1869" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M38.005 31.3357L32.6694 30.4464" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M19.3307 27.0762L13.9951 26.1869" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M13.9951 31.3357L19.3307 30.4464" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M21.0811 23.8849C21.8177 23.1482 23.0121 23.1482 23.7488 23.8849" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M28.2515 23.8849C28.9882 23.1482 30.1826 23.1482 30.9192 23.8849" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-
-
             </div>
             <h2 className="text-base sm:text-lg font-semibold ml-2">EXCELLENCE</h2>
-            <p className="text-sm sm:text-base">We strive to provide the highest standard of veterinary care through continuous learning and dedication.</p>
+            <p className="text-sm sm:text-base mt-1">
+              We strive to provide the highest standard of veterinary care through continuous learning and dedication.
+            </p>
           </div>
           <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
             <div className="flex items-center mb-4">
@@ -226,7 +238,9 @@ export default function About() {
               </svg>
             </div>
             <h2 className="text-base sm:text-lg font-semibold ml-2">COLLABORATION</h2>
-            <p className="text-sm sm:text-base">We work closely with pet owners and a team of skilled professionals to ensure the best outcomes for each pet.</p>
+            <p className="text-sm sm:text-base mt-1">
+              We work closely with pet owners and a team of skilled professionals to ensure the best outcomes for each pet.
+            </p>
           </div>
         </div>
       </div>
