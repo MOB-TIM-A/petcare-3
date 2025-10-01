@@ -18,14 +18,14 @@ return (
             </p>
             <div className="flex flex-col sm:flex-row gap-2 mt-6">
               <Link
-                href="/contact"
-                className="px-6 py-3 bg-[#FF9900] text-white rounded-full text-center cursor-pointer"
+                href="/book-appointment"
+         className="px-6 py-3 bg-[#FF9900] text-white rounded-full text-center cursor-pointer hover:border-amber-950 hover:opacity-80"
                >
                 Book Appointment
               </Link>
              <Link
                href="/contact"
-               className="px-6 py-3 border border-[#1B1B1B] text-[#1B1B1B] rounded-full text-center cursor-pointer"
+               className="px-6 py-3 border border-[#1B1B1B] text-[#1B1B1B] rounded-full text-center cursor-pointer  hover:text-amber-550 hover:opacity-80"
              >
                Get Started
              </Link>
@@ -71,33 +71,33 @@ return (
 
       <div className="h-full max-w-screen-xl mx-auto">
         <div className="py-22 flex flex-col gap-8">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-center md:text-left md:mx-auto md:w-3/4 lg:w-2/3">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-left md:mx-auto md:w-3/4 lg:w-2/3">
             The Best Facilities are Here
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="relative h-72 sm:h-96 lg:h-[516px]">
               <img src="./assets/fac-image1.png" alt="" className="w-full h-full object-cover rounded-2xl" />
-              <div className="px-6 py-3 bg-white border border-[#1B1B1B] text-[#1B1B1B] rounded-full absolute top-4 left-4">
+              <Link href="/grooming" className="px-6 py-3 bg-white border border-[#1B1B1B] text-[#1B1B1B] rounded-full absolute top-4 left-4 hover:opacity-90 hover:border-amber-500">
                 Grooming Area
-              </div>
+              </Link>
             </div>
             <div className="relative h-72 sm:h-96 lg:h-[516px]">
               <img src="./assets/fac-image2.png" alt="" className="w-full h-full object-cover rounded-2xl" />
-              <div className="px-6 py-3 bg-white border border-[#1B1B1B] text-[#1B1B1B] rounded-full absolute top-4 left-4">
+              <Link href="/boarding" className="px-6 py-3 bg-white border border-[#1B1B1B] text-[#1B1B1B] rounded-full absolute top-4 left-4 hover:opacity-90 hover:border-amber-500">
                 Boarding Facilities
-              </div>
+              </Link>
             </div>
             <div className="relative h-72 sm:h-96 lg:h-[516px]">
               <img src="./assets/fac-image3.png" alt="" className="w-full h-full object-cover rounded-2xl" />
-              <div className="px-6 py-3 bg-white border border-[#1B1B1B] text-[#1B1B1B] rounded-full absolute top-4 left-4">
+              <Link href="/pet-spa" className="px-6 py-3 bg-white border border-[#1B1B1B] text-[#1B1B1B] rounded-full absolute top-4 left-4 hover:opacity-90 hover:border-amber-500">
                 Pet Spa
-              </div>
+              </Link>
             </div>
             <div className="relative h-72 sm:h-96 lg:h-[516px]">
               <img src="./assets/fac-image4.png" alt="" className="w-full h-full object-cover rounded-2xl" />
-              <div className="px-6 py-3 bg-white border border-[#1B1B1B] text-[#1B1B1B] rounded-full absolute top-4 left-4">
+              <Link href="/play-zone" className="px-6 py-3 bg-white border border-[#1B1B1B] text-[#1B1B1B] rounded-full absolute top-4 left-4 hover:opacity-90 hover:border-amber-500">
                 Play Zone
-              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -156,29 +156,6 @@ return (
           </div>
         </div>
       </div>
-
-      {/* Section Testimonial Baru */}
-    <div className="max-w-screen-xl mx-auto px-4 mt-20">
-      <h3 className="text-3xl font-semibold mb-8">What Our Client Say</h3>
-      <div className="bg-[#f0f0f0] rounded-xl p-8 max-w-3xl mx-auto">
-        <span className="inline-block bg-orange-200 text-orange-600 text-sm px-4 py-1 justify-center item-center rounded-full mb-4">
-          John Corner, Melbourne
-        </span>
-          <p className="text-center text-lg leading-relaxed">
-          So far, this pet shop has proven to be the best in the area when it comes to
-          providing expert and reliable services for pet owners. Their team operates
-          with genuine care and passion.
-          </p>
-        <div className="flex justify-center gap-4 mt-6 text-xl text-gray-700">
-            <button aria-label="Previous testimonial" className="hover:text-orange-500">
-            &larr;
-          </button>
-          <button aria-label="Next testimonial" className="hover:text-orange-500">
-          &rarr;
-        </button>
-      </div>
-    </div>
-  </div>
       
 
     </>
