@@ -18,7 +18,7 @@ return (
             </p>
             <div className="flex flex-col sm:flex-row gap-2 mt-6">
               <Link
-                href="/book-appointment"
+                href="/contact"
          className="px-6 py-3 bg-[#FF9900] text-white rounded-full text-center cursor-pointer hover:border-amber-950 hover:opacity-80"
                >
                 Book Appointment
@@ -77,27 +77,27 @@ return (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="relative h-72 sm:h-96 lg:h-[516px]">
               <img src="./assets/fac-image1.png" alt="" className="w-full h-full object-cover rounded-2xl" />
-              <Link href="/grooming" className="px-6 py-3 bg-white border border-[#1B1B1B] text-[#1B1B1B] rounded-full absolute top-4 left-4 hover:opacity-90 hover:border-amber-500">
+              <div className="px-6 py-3 bg-white border border-[#1B1B1B] text-[#1B1B1B] rounded-full absolute top-4 left-4 hover:opacity-90 hover:border-amber-500">
                 Grooming Area
-              </Link>
+              </div>
             </div>
             <div className="relative h-72 sm:h-96 lg:h-[516px]">
               <img src="./assets/fac-image2.png" alt="" className="w-full h-full object-cover rounded-2xl" />
-              <Link href="/boarding" className="px-6 py-3 bg-white border border-[#1B1B1B] text-[#1B1B1B] rounded-full absolute top-4 left-4 hover:opacity-90 hover:border-amber-500">
+              <div className="px-6 py-3 bg-white border border-[#1B1B1B] text-[#1B1B1B] rounded-full absolute top-4 left-4 hover:opacity-90 hover:border-amber-500">
                 Boarding Facilities
-              </Link>
+              </div>
             </div>
             <div className="relative h-72 sm:h-96 lg:h-[516px]">
               <img src="./assets/fac-image3.png" alt="" className="w-full h-full object-cover rounded-2xl" />
-              <Link href="/pet-spa" className="px-6 py-3 bg-white border border-[#1B1B1B] text-[#1B1B1B] rounded-full absolute top-4 left-4 hover:opacity-90 hover:border-amber-500">
+              <div className="px-6 py-3 bg-white border border-[#1B1B1B] text-[#1B1B1B] rounded-full absolute top-4 left-4 hover:opacity-90 hover:border-amber-500">
                 Pet Spa
-              </Link>
+              </div>
             </div>
             <div className="relative h-72 sm:h-96 lg:h-[516px]">
               <img src="./assets/fac-image4.png" alt="" className="w-full h-full object-cover rounded-2xl" />
-              <Link href="/play-zone" className="px-6 py-3 bg-white border border-[#1B1B1B] text-[#1B1B1B] rounded-full absolute top-4 left-4 hover:opacity-90 hover:border-amber-500">
+              <div className="px-6 py-3 bg-white border border-[#1B1B1B] text-[#1B1B1B] rounded-full absolute top-4 left-4 hover:opacity-90 hover:border-amber-500">
                 Play Zone
-              </Link>
+              </div>
             </div>
           </div>
         </div>
