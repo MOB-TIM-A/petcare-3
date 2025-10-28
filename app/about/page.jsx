@@ -97,6 +97,32 @@ export default function About() {
                     name: "Dr. Kathryn Murpy",
                     role: "Veterinarian",
                   },
+                   {
+                    img: "./assets/team-image8.png",
+                    name: "Dr. Kathryn Murpy",
+                    role: "Veterinarian",
+                  },
+                   {
+                    img: "./assets/team-image8.png",
+                    name: "Dr. Kathryn Murpy",
+                    role: "Veterinarian",
+                  },
+                   {
+                    img: "./assets/team-image8.png",
+                    name: "Dr. Kathryn Murpy",
+                    role: "Veterinarian",
+                  },
+                   {
+                    img: "./assets/team-image8.png",
+                    name: "Dr. Kathryn Murpy",
+                    role: "Veterinarian",
+                  },
+                   {
+                    img: "./assets/team-image8.png",
+                    name: "Dr. Kathryn Murpy",
+                    role: "Veterinarian",
+                  },
+
                  
                 ].map((member, idx) => (
                   <div
