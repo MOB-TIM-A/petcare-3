@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 import ClickSpark from './components/ClickSpark/ClickSpark';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ['latin'] })
 
