@@ -18,7 +18,7 @@ return (
       </p>
       <div className="flex flex-col sm:flex-row gap-2 mt-6">
         <Link
-        href="/contact"
+        href="/appointment"
      className="px-6 py-3 bg-[#FF9900] text-white rounded-full text-center cursor-pointer hover:border-amber-950 hover:opacity-80"
          >
         Book Appointment
