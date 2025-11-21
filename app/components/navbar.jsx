@@ -57,8 +57,8 @@ const Navbar = () => {
                 <li key={href}>
                   <Link
                     href={href}
-                    className={`font-medium hover:text-primary ${
-                      pathname === href ? 'text-primary' : ''
+                    className={`font-medium hover:text-[#FF9900] ${
+                      pathname === href ? 'text-[#FF9900]' : ''
                     }`}
                   >
                     {label}
@@ -70,12 +70,12 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link
               href="/contact"
-              className="bg-white border border-black text-black py-2 px-4 rounded-3xl hover:bg-primary duration-300 transition-all ease-in-out"
+              className="bg-white border border-black text-black py-2 px-4 rounded-3xl hover:bg-[#FF9900] duration-300 transition-all ease-in-out"
             >
               Contact Us
             </Link>
             <button
-              className="md:hidden text-2xl bg-transparent border-none cursor-pointer hover:text-primary ml-3"
+              className="md:hidden text-2xl bg-transparent border-none cursor-pointer hover:text-[#FF9900] ml-3"
               onClick={() => setMobileOpen(true)}
             >
               ☰
@@ -92,7 +92,7 @@ const Navbar = () => {
         >
           <div className="bg-white text-black h-full flex flex-col items-end p-6 border w-full">
             <button
-              className="text-2xl mb-4 hover:text-primary"
+              className="text-2xl mb-4 hover:text-[#FF9900]"
               onClick={() => setMobileOpen(false)}
             >
               ✕
@@ -102,7 +102,7 @@ const Navbar = () => {
                 <li key={href}>
                   <Link
                     href={href}
-                    className={`font-medium hover:text-primary block ${pathname === href ? 'text-primary' : ''
+                    className={`font-medium hover:text-primary block ${pathname === href ? 'text-[#FF9900]' : ''
                       }`}
                     onClick={() => setMobileOpen(false)}
                   >

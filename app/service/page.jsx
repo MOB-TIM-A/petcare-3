@@ -11,7 +11,7 @@ export default function Service() {
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="flex flex-col order-2 gap-5 md:order-1">
-              <details className="flex flex-col justify-center p-4 border shadow-lg border-grey open:border-primary open:bg-secondary rounded-xl accordion-item" open>
+              <details className="flex flex-col justify-center p-4 border shadow-lg border-grey open:border-primary open:bg-secondary rounded-xl accordion-item bg-amber-300" open>
                 <summary className="text-xl font-medium list-none cursor-pointer">Comprehensive Services</summary>
                 <p className="mt-1">From grooming and training to medical check-ups and daycare, we offer all-in-one solutions for your pet's well-being.</p>
               </details>

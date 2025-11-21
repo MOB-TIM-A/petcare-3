@@ -44,7 +44,9 @@ export default function ContactUs() {
                 <textarea id="message" placeholder="Enter your message" className="mt-1 p-3 border rounded-md"></textarea>
               </div>
               <div className="flex justify-center">
-                <button type="submit" className="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600">Submit</button>
+                <button 
+                type="submit" 
+                className="bg-[#FF9900] text-white px-6 py-3 rounded-full hover:bg-[#FF9900]">Submit</button>
               </div>
             </form>
           </div>
