@@ -249,7 +249,7 @@ const AppointmentPage = () => {
             <div className="flex items-center">
               <img className="w-8 h-8 mr-2 animate-spin" src="./assets/label-icon.svg" alt="Pet Daycare" />
               <p className="text-lg font-semibold">Pet Daycare</p>
-              <img className="w-8 h-8 mr-2 animate-spin" src="./assets/label-icon.svg" alt="Pet Daycare" />
+
             </div>
             <div className="flex items-center">
               <img className="w-8 h-8 mr-2 animate-spin" src="./assets/label-icon.svg" alt="Pet Supplies" />
@@ -309,23 +309,24 @@ const AppointmentPage = () => {
                   >
                     <option>Pet Grooming</option>
                     <option>Veterinary Consultation</option>
-                    <option>Vaccination</option>
-                    <option>Dental Care</option>
+                    <option>Pet Daycare & boarding</option>
+                    <option>Pet supplies</option>
+                    <option>Pet Adoption Assistance</option>
                   </select>
                 </div>
                 <div>
                   <label htmlFor="petType" className="block font-semibold mb-1">
-                    Your types of pets
+                    Your pets
                   </label>
                   <select
                     id="petType"
                     defaultValue=""
                     className="w-full rounded-md bg-gray-100 px-4 py-2 focus:outline-none focus:ring-2"
                   >
-                    <option>British Short Hair Cat</option>
-                    <option>Persian Cat</option>
-                    <option>Golden Retriever</option>
-                    <option>Parrot</option>
+                    <option>Cat</option>
+                    <option>Dog </option>
+                    <option></option>
+                    <option></option>
                   </select>
                 </div>
               </div>

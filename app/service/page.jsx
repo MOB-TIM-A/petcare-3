@@ -11,19 +11,19 @@ export default function Service() {
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="flex flex-col order-2 gap-5 md:order-1">
-              <details className="flex flex-col justify-center p-4 border shadow-lg border-grey open:border-primary open:bg-secondary rounded-xl accordion-item bg-amber-300" open>
+              <details className="flex flex-col justify-center p-4 border shadow-lg border-grey open:border-[#FF9900] open:bg-[#f7e3c4] rounded-xl accordion-item " open>
                 <summary className="text-xl font-medium list-none cursor-pointer">Comprehensive Services</summary>
                 <p className="mt-1">From grooming and training to medical check-ups and daycare, we offer all-in-one solutions for your pet's well-being.</p>
               </details>
-              <details className="flex flex-col justify-center p-4 border shadow-lg border-grey open:border-primary open:bg-secondary rounded-xl accordion-item">
+              <details className="flex flex-col justify-center p-4 border shadow-lg border-grey open:border-[#FF9900] open:bg-[#f7e3c4] rounded-xl accordion-item">
                 <summary className="text-xl font-medium list-none cursor-pointer">Certified Experts</summary>
                 <p className="mt-1">From grooming and training to medical check-ups and daycare, we offer all-in-one solutions for your pet's well-being.</p>
               </details>
-              <details className="flex flex-col justify-center p-4 border shadow-lg border-grey open:border-primary open:bg-secondary rounded-xl accordion-item">
+              <details className="flex flex-col justify-center p-4 border shadow-lg border-grey open:border-[#FF9900] open:bg-[#f7e3c4] rounded-xl accordion-item">
                 <summary className="text-xl font-medium list-none cursor-pointer">State of the-Art Facilities</summary>
                 <p className="mt-1">From grooming and training to medical check-ups and daycare, we offer all-in-one solutions for your pet's well-being.</p>
               </details>
-              <details className="flex flex-col justify-center p-4 border shadow-lg border-grey open:border-primary open:bg-secondary rounded-xl accordion-item">
+              <details className="flex flex-col justify-center p-4 border shadow-lg border-grey open:border-[#FF9900] open:bg-[#f7e3c4] rounded-xl accordion-item">
                 <summary className="text-xl font-medium list-none cursor-pointer">Trusted by Pet Owners</summary>
                 <p className="mt-1">From grooming and training to medical check-ups and daycare, we offer all-in-one solutions for your pet's well-being.</p>
               </details>
@@ -45,7 +45,7 @@ export default function Service() {
               <div className="flex flex-col gap-5">
                 <div className="w-full py-3 px-3 flex gap-5 rounded-xl bg-[var(--color-grey)] shadow-md border border-transparent group hover:border-primary hover:bg-secondary transition-colors">
                   <img src="./assets/service-icon1.png" alt="" className="w-16 h-16 my-auto rounded-lg" />
-                  <div className="flex flex-col gap-3 transition-colors group-hover:text-primary group-hover:border-primary">
+                  <div className="flex flex-col gap-3 transition-colors group-hover:text-[#FF9900] group-hover:border-[#FF9900]">
                     <h3 className="font-semibold">Pet Supplies</h3>
                     <div className="flex flex-wrap gap-2">
                       <div className="px-4 py-1 text-sm border md:text-base rounded-2xl">Toys</div>
@@ -55,7 +55,7 @@ export default function Service() {
                 </div>
                 <div className="w-full py-3 px-3 flex gap-5 rounded-xl bg-[var(--color-grey)] shadow-md border border-transparent group hover:border-primary hover:bg-secondary transition-colors">
                   <img src="./assets/service-icon2.png" alt="" className="w-16 h-16 my-auto rounded-lg" />
-                  <div className="flex flex-col gap-3 transition-colors group-hover:text-primary group-hover:border-primary">
+                  <div className="flex flex-col gap-3 transition-colors group-hover:text-[#FF9900] group-hover:border-[#FF9900]">
                     <h3 className="font-semibold">Grooming Services</h3>
                     <div className="flex flex-wrap gap-2">
                       <div className="px-4 py-1 text-sm border md:text-base rounded-2xl">Nail Trimming</div>
@@ -65,7 +65,7 @@ export default function Service() {
                 </div>
                 <div className="w-full py-3 px-3 flex gap-5 rounded-xl bg-[var(--color-grey)] shadow-md border border-transparent group hover:border-primary hover:bg-secondary transition-colors">
                   <img src="./assets/service-icon3.png" alt="" className="w-16 h-16 my-auto rounded-lg" />
-                  <div className="flex flex-col gap-3 transition-colors group-hover:text-primary group-hover:border-primary">
+                  <div className="flex flex-col gap-3 transition-colors group-hover:text-[#FF9900] group-hover:border-[#FF9900]">
                     <h3 className="font-semibold">Veterinary Support</h3>
                     <div className="flex flex-wrap gap-2">
                       <div className="px-4 py-1 text-sm border md:text-base rounded-2xl">Health check-ups</div>
@@ -75,7 +75,7 @@ export default function Service() {
                 </div>
                 <div className="w-full py-3 px-3 flex gap-5 rounded-xl bg-[var(--color-grey)] shadow-md border border-transparent group hover:border-primary hover:bg-secondary transition-colors">
                   <img src="./assets/service-icon4.png" alt="" className="w-16 h-16 my-auto rounded-lg" />
-                  <div className="flex flex-col gap-3 transition-colors group-hover:text-primary group-hover:border-primary">
+                  <div className="flex flex-col gap-3 transition-colors group-hover:text-[#FF9900] group-hover:border-[#FF9900]">
                     <h3 className="font-semibold">Pet Adoption Assistance</h3>
                     <div className="flex flex-wrap gap-2">
                       <div className="px-4 py-1 text-sm border md:text-base rounded-2xl">Local Shelters</div>
@@ -85,7 +85,7 @@ export default function Service() {
                 </div>
                 <div className="w-full py-3 px-3 flex gap-5 rounded-xl bg-[var(--color-grey)] shadow-md border border-transparent group hover:border-primary hover:bg-secondary transition-colors">
                   <img src="./assets/service-icon5.png" alt="" className="w-16 h-16 my-auto rounded-lg" />
-                  <div className="flex flex-col gap-3 transition-colors gap group-hover:text-primary group-hover:border-primary">
+                  <div className="flex flex-col gap-3 transition-colors gap group-hover:text-[#FF9900] group-hover:border-[#FF9900]">
                     <h3 className="font-semibold">Pet Boarding & Daycare</h3>
                     <div className="flex flex-wrap gap-2">
                       <div className="px-4 py-1 text-sm border md:text-base rounded-2xl">Playtime</div>
