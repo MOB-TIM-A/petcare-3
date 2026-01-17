@@ -10,6 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: "Pet Care",
   description: "Web Profile Petcare Company",
+  
 };
 
 export default function RootLayout({ children }) {
@@ -26,7 +27,7 @@ export default function RootLayout({ children }) {
           duration={400}
         >
           <Navbar />
-          <main className='w-full mx-auto px-4 lg:max-w-screen-xl '>
+          <main className='w-full mx-auto px-4 lg:max-w-7xl '>
             {children}
           </main>
           <Footer />

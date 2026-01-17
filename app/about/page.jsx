@@ -4,11 +4,11 @@ export default function About() {
   return (
     <>
       <section id="header-about" className="bg-white">
-        <div className="container mx-auto w-full max-w-[1280px]">
+        <div className="container mx-auto w-full max-w-7xl">
           <div className="py-10 px-4 md:py-20 md:px-8 lg:px-0">
             <div className="grid items-center gap-10 lg:grid-cols-2">
               <img
-                className="w-full h-56 sm:h-80 md:h-[436px] object-cover object-left-top rounded-xl"
+                className="w-full h-56 sm:h-80 md:h-109 object-cover object-top-left rounded-xl"
                 src="./assets/hero-about-image.png"
                 alt="Woman with a cat"
               />
@@ -92,26 +92,7 @@ export default function About() {
                     name: "Dr. Kathryn Murpy",
                     role: "Veterinarian",
                   },
-                  {
-                    img: "./assets/team-image8.png",
-                    name: "Dr. Kathryn Murpy",
-                    role: "Veterinarian",
-                  },
-                   {
-                    img: "./assets/team-image8.png",
-                    name: "Dr. Kathryn Murpy",
-                    role: "Veterinarian",
-                  },
-                   {
-                    img: "./assets/team-image8.png",
-                    name: "Dr. Kathryn Murpy",
-                    role: "Veterinarian",
-                  },
-                   {
-                    img: "./assets/team-image8.png",
-                    name: "Dr. Kathryn Murpy",
-                    role: "Veterinarian",
-                  },
+                
                  
 
                  
@@ -125,7 +106,7 @@ export default function About() {
                       src={member.img}
                       alt={member.name}
                     />
-                    <div className="flex flex-row items-center justify-between gap-4 p-3 border-white shadow-2xl bg-opacity-80 rounded-2xl backdrop-blur-xl border-opacity-80 border-1 relative z-10">
+                    <div className="flex flex-row items-center justify-between gap-4 p-3 border-white shadow-2xl bg-opacity-80 rounded-2xl backdrop-blur-xl border-opacity-80 border relative z-10">
                       <div className="flex flex-col justify-center">
                         <h4 className="text-base text-amber-500 font-medium">{member.name}</h4>
                         <div className="flex items-center gap-2">

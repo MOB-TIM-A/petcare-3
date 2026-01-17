@@ -50,6 +50,7 @@ function DatePicker() {
     );
   };
 
+
   const formattedSelectedDate = selectedDate.toLocaleDateString("en-US", {
     weekday: "long",
     year: "numeric",
@@ -71,7 +72,7 @@ function DatePicker() {
   ];
 
   return (
-    <div className="max-w-screen-xl mx-auto px-4 py-10">
+    <div className="max-w-7xlto px-4 py-10">
       <h2 className="text-2xl font-bold mb-4">
         Choose a Date for Your Pet’s Appointment
       </h2>
@@ -152,17 +153,7 @@ function DatePicker() {
           <p className="mt-2 text-xs italic text-gray-500">
             &copy;All Times Are in Central Time~
           </p>
-          <button
-            type="button"
-            disabled={!selectedTime}
-            className={`mt-4 w-full py-2 rounded text-white font-semibold ${
-              selectedTime
-                ? "bg-orange-500 hover:bg-orange-600"
-                : "bg-gray-300 cursor-not-allowed"
-            }`}
-          >
-            Book Appointment
-          </button>
+         
         </div>
 
         {/* Time selection */}
@@ -203,22 +194,22 @@ function DatePicker() {
       </div>
     </div>
   );
-}
+};
 
 const AppointmentPage = () => {
   return (
     <>
-        <div className="h-full max-w-screen-xl mx-auto px-4 py-12">
+        <div className="h-full max-w-7xl mx-auto px-4 py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
             <div className="flex flex-col gap-6 justify-center relative">
-              <img src="./assets/line1.svg" alt="" className="max-w-[180px] md:max-w-[239px] ml-[15%] md:ml-[25%] mb-10 md:mb-20" />
+              <img src="./assets/line1.svg" alt="" className="max-w-45 md:max-w-59.75l-[15%] md:ml-[25%] mb-10 md:mb-20" />
               <h1 className="text-3xl sm:text-4xl md:text-6xl font-medium animate-fade-in animate-once delay-200">
                 Easy schedulling for Your Pet's Healt Needs 
               </h1>
               <p className="text-base md:text-lg animate-fade-in animate-once delay-500">
                 Book Appointments effortlessly and prioritze your pet's well-being with our convenient online schedulling system.
               </p>
-              <img src="./assets/line2.svg" alt="" className="max-w-[180px] md:max-w-[239px] mt-10 md:mt-20 ml-[15%] md:ml-[25%]" />
+              <img src="./assets/line2.svg" alt="" className="max-w-45 md:max-w-59.75 mt-10 md:mt-20 ml-[15%] md:ml-[25%]" />
             </div>
             <div className="flex items-center justify-center mt-8 md:mt-0">
               <img src="./assets/hero-image.png" alt="" className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl object-contain" />
@@ -261,7 +252,7 @@ const AppointmentPage = () => {
 
       {/* Appointment Booking Form Section */}
       <div className=" bg-white">
-        <div className="h-full max-w-screen-xl mx-auto px-4 py-12">
+        <div className="h-full max-w-7xl mx-auto px-4 py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
             <div className="flex flex-col gap-6 justify-center ">
               <h2 className="text-3xl font-bold mb-2">

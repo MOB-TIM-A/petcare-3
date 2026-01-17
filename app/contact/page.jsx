@@ -3,7 +3,7 @@ import React from 'react'
 export default function ContactUs() {
   return (
     <section className="py-20">
-      <div className="max-w-[1280px] mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-32 md:gap-10">
           <div className="md:w-1/2 space-y-6">
             <div>
@@ -46,7 +46,7 @@ export default function ContactUs() {
               <div className="flex justify-center">
                 <button 
                 type="submit" 
-                className="bg-[#FF9900] text-white px-6 py-3 rounded-full hover:bg-[#FF9900]">Submit</button>
+                className="bg-[#FF9900] text-white px-22 py-3 rounded-full hover:opacity-90 hover:border-amber-500 transition-all duration-300 cursor-pointer">Submit</button>
               </div>
             </form>
           </div>

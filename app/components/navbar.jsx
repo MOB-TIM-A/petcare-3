@@ -45,9 +45,8 @@ const Navbar = () => {
     <>
       <header
         className={`w-full sticky top-0 z-30 transition-all duration-300 ${scrolled ? 'bg-black/50 backdrop-blur-md text-white' : 'bg-white text-black'
-          }`}
-      >
-        <div className="flex justify-between items-center p-4 max-w-screen-xl mx-auto">
+          }`} >
+        <div className="flex justify-between items-center p-4 max-w-7xl mx-auto">
           <div className="text-lg font-bold flex items-center">
             <Image src={logoSrc} alt="petcare" width={120} height={40} priority />
           </div>
